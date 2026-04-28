@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El llegat de l'11s</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="toolbar">
+        <div class="titles" style="display: flex; gap: 15px;">
+            <button id="btn_intro" data-target="intro">INTRODUCCIÓ</button>
+            <button id="btn_teories" data-target="teories">TEORIES</button>
+            <button id="btn_homenatges" data-target="homenatges">HOMENATGES</button>
+            <button id="btn_info_fonts" data-target="font_info">FONTS D'INFORMACIÓ</button>
+        </div>
+    </nav>
+
+    <!-- Contenedor donde se inyecta el contenido -->
+    <main class="content" id="main-content"></main>
+
+    <!-- Plantillas (No se ven hasta que JS las llama) -->
+    <template id="intro">
+        <h1>Introducció</h1>
+        <h2>1. Què hi trobaràs</h2>
+        <p>En aquesta web hi trobaràs informació sobre els atacs de l’11-S i els efectes que van provocar en la societat.</p>
+        <ul>
+            <li>Administratiu: Aviació i protocols.</li>
+            <li>Social: Conspiracions i traumes.</li>
+            <li>Humà: Memorials i homenatges.</li>
+        </ul>
+        <h2>2. Misteri...</h2>
+        <p>L'impacte global segueix vigent vint anys després.</p>
+    </template>
+
+    <template id="teories">
+        <h1>Teories i conspiracions</h1>
+        <h2>1. Context històric: fets confirmats</h2>
+        <p>L'11 de setembre el grup terrorista Al-Qaida va segrestar quatre avions comercials...</p>
+        <h2>2. L'origen de les conspiracions</h2>
+        <p>Analitzem per què la ment humana busca patrons en situacions de caos i falta d'informació oficial.</p>
+    </template>
+
+    <template id="homenatges">
+        <h1>Homenatges</h1>
+        <p>Secció dedicada als memorials com el "Ground Zero" a Nova York.</p>
+    </template>
+
+    <template id="font_info">
+        <h1>Fonts d'informació</h1>
+        <div class="sources-container" style="display: flex; flex-wrap: wrap;">
+            <div class="card">
+                <h6>Viquipèdia</h6>
+                <a href="https://wikipedia.org" target="_blank">Atemptats 11-S</a>
+                <p>Pàgina: Teories</p>
+            </div>
+            <div class="card">
+                <h6>BBC News</h6>
+                <a href="https://bbc.com" target="_blank">Article sobre conspiracions</a>
+                <p>Pàgina: Teories</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
